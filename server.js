@@ -42,6 +42,7 @@ app.use("/logout", require("./routes/logout"))//logout route
 
 app.use(verifyJWT);
 app.use("/employees", require("./routes/api/employees"));//employee route
+app.use("/users", require("./routes/api/users"));//employee route
 
 //404 error--page not found
 app.all('*', (req, res) => {
